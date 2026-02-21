@@ -1,3 +1,6 @@
+
+{/*
+
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -33,3 +36,23 @@ function App() {
 }
 
 export default App
+
+*/}
+
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Layout from './components/layout/Layout.jsx'; 
+
+function App() {
+  return (
+    <>
+      <Layout>
+      </Layout>
+    </>
+  );
+}
+
+
+
+export default App;
+
