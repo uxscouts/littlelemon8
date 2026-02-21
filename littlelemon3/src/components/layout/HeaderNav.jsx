@@ -4,9 +4,10 @@ import LogoComponent  from './LemonLogo';
 
 function HeaderNav() {
   return (
-    <Navbar expand="md">
+     <Navbar expand="md" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home"><LogoComponent/></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />        
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto"> {/* Use me-auto for right alignment */}
             <Nav.Link href="#home">About Us</Nav.Link>
