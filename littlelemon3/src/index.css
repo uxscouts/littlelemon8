@@ -1,5 +1,3 @@
-
-
 .LittleLemon_Container {
   background-color: #495E57;
   min-height: 800px;
@@ -7,4 +5,92 @@
 
 .footer {
   text-align: center;
+}
+
+
+
+.green-jumbotron {
+
+}
+.container-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.Tray_of_Fancy_Sushi {
+  width: 300px;
+  height: 360px;
+  background-color: red;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  position: relative; /* Ensures shadow displays over grid lines */
+  z-index: 1;  
+  background-image: url("./assets/images/Fancy-Sushi-Small.png"); /* Sets the image */
+  background-size: cover;                  /* Scales the image to cover the entire container */
+  background-repeat: no-repeat;            /* Prevents the image from tiling */
+  background-position: center;             /* Centers the image within the div */
+  margin-bottom: -40px;
+}
+/*
+
+.grid-item {
+
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+*/
+
+.grid-item {
+  padding: 20px;
+}
+
+/* <weight>: Use a value from 200 to 800 */
+/* <uniquifier>: Use a unique and descriptive class name */
+
+.karla-200 {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.karla-300 {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.karla-400 {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.karla-800 {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.lightGrey {
+  background-color: light;
+}
+.big-green-section {
+  background-color:#495e57;
+  padding:3em;
+}
+.lemon-yellow {
+  color: #F4CE14;
+}
+.white {
+  color: white;
 }
