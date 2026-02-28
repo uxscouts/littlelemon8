@@ -7,11 +7,6 @@
   text-align: center;
 }
 
-
-
-.green-jumbotron {
-
-}
 .container-auto {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -35,23 +30,12 @@
   background-position: center;             /* Centers the image within the div */
   margin-bottom: -40px;
 }
-/*
 
-.grid-item {
-
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  text-align: center;
-}
-*/
 
 .grid-item {
   padding: 20px;
 }
 
-/* <weight>: Use a value from 200 to 800 */
-/* <uniquifier>: Use a unique and descriptive class name */
 
 .karla-200 {
   font-family: "Karla", sans-serif;
