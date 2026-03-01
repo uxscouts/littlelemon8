@@ -8,7 +8,7 @@ import Footer from './Footer';
 const Layout = ({ children }) => (
   <>
     <Header>
-      <HeaderNav />
+    <HeaderNav />
     </Header>
     <HomeIntro />
     <Specials/>
