@@ -4,14 +4,16 @@ import HomeIntro from './HomeIntro';
 import Specials from './Specials';
 import Reviews from './Reviews';
 import AboutUsMod from './AboutUsMod';
+import TestRoutes from './TestRoutes';
 import Footer from './Footer';
 
 
 const Layout = ({ children }) => (
   <>
     <Header>
-    <HeaderNav />
+      <HeaderNav />
     </Header>
+    <TestRoutes />
     <HomeIntro />
     <Specials/>
     <Reviews/>
