@@ -2,6 +2,14 @@ import { useState } from 'react';
 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
+
+
+
 /*
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -40,6 +48,8 @@ const Navigation = () => {
   return (
     <>
       <Router>
+
+{/*
         <div class="container-auto">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <Link class="nav-link navbar-brand" to="/">
@@ -93,6 +103,36 @@ const Navigation = () => {
             </div>
           </nav>
         </div>
+*/}
+
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+          <Link class="nav-link navbar-brand" to="/">
+            <img src={LemonLogo} width="250" alt="Little Lemon Logo" />
+          </Link>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+          {/*  
+          <Nav.Link to="/">Home</Nav.Link>
+          <Nav.Link to="/about">About Us</Nav.Link>
+            <Nav.Link to="/reservation">Reservation</Nav.Link>
+            <Nav.Link to="/homeorder">Home Order</Nav.Link>
+            <Nav.Link to="/login">Login</Nav.Link> */}
+              <Link class="nav-link" to="/">Home</Link>
+              <Link class="nav-link" to="/about">About Us</Link>
+              <Link class="nav-link" to="/reservation">Reservation</Link>
+              <Link class="nav-link" to="/homeorder">Home Order</Link>
+              <Link class="nav-link text-end" to="/login">
+                <Button variant="warning">Login</Button>
+              </Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+
+
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
