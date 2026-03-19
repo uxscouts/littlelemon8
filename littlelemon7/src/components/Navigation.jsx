@@ -123,10 +123,16 @@ const Navigation = () => {
               <Link class="nav-link" to="/about">About Us</Link>
               <Link class="nav-link" to="/reservation">Reservation</Link>
               <Link class="nav-link" to="/homeorder">Home Order</Link>
+              {/*
+              <Link class="nav-link text-end" to="/login">
+                <Button variant="warning">Login</Button>
+              </Link>*/}
+          </Nav>
+          <Nav className="mr">
               <Link class="nav-link text-end" to="/login">
                 <Button variant="warning">Login</Button>
               </Link>
-          </Nav>
+          </Nav>          
         </Navbar.Collapse>
       </Container>
     </Navbar>
