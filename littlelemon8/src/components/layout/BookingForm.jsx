@@ -1,10 +1,10 @@
 
-
 import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
 
 
 const BookingForm = () => {
     return (
+        <div className="BookingFormContainer">
         <Form className="BookingForm">
             <FormGroup>
                 <Label htmlFor="res-date">Choose date</Label>
@@ -34,6 +34,7 @@ const BookingForm = () => {
             </FormGroup>
             <Button type="submit">Make Your reservation</Button>
         </Form>
+        </div>
     )
 }
 

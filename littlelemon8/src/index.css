@@ -465,7 +465,47 @@ card {
 }
 
 .BookingForm {
-display: "grid"; 
+display: grid; 
 max-width: 700px;
 gap: 2em;
+}
+
+.BookingFormContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 0px 0px;
+  margin: 30px auto;
+  width: 700px;
+}
+
+.BookingForm {
+  font-family: 'Markazi Text';
+}
+
+.BookingForm input, .BookingForm label {
+  font-size: 170%;
+}
+
+.BookingFormContainer select {
+  background-color: #f0f0f0; /* Example background color */
+  color: #333;               /* Example text color */
+  padding: 10px;             /* Example padding */
+  border: 1px solid #ccc;    /* Example border */
+  font-size: 170%;          /* Example font size */
+}
+
+/* You can target option elements directly for some basic styling */
+.BookingFormContainer option {
+  background-color: white;
+  color: black;
+}
+
+.BookingFormContainer button {
+  background-color: #ee9972;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 170%;
+  cursor: pointer;
 }
