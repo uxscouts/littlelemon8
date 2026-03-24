@@ -463,3 +463,9 @@ card {
   display: block;
   width: 100%;
 }
+
+.BookingForm {
+display: "grid"; 
+max-width: 700px;
+gap: 2em;
+}

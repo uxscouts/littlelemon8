@@ -20,6 +20,7 @@ import Container from 'react-bootstrap/Container';
 import Homepage from './layout/Homepage.jsx';
 import AboutUsMod from './layout/AboutUsMod.jsx';
 import Reservation from './layout/Reservation.jsx';
+import BookingPage from './layout/BookingPage.jsx';
 import HomeOrder from './layout/HomeOrder.jsx';
 
 
@@ -113,20 +114,10 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-          {/*  
-          <Nav.Link to="/">Home</Nav.Link>
-          <Nav.Link to="/about">About Us</Nav.Link>
-            <Nav.Link to="/reservation">Reservation</Nav.Link>
-            <Nav.Link to="/homeorder">Home Order</Nav.Link>
-            <Nav.Link to="/login">Login</Nav.Link> */}
               <Link class="nav-link" to="/">Home</Link>
               <Link class="nav-link" to="/about">About Us</Link>
               <Link class="nav-link" to="/reservation">Reservation</Link>
               <Link class="nav-link" to="/homeorder">Home Order</Link>
-              {/*
-              <Link class="nav-link text-end" to="/login">
-                <Button variant="warning">Login</Button>
-              </Link>*/}
           </Nav>
           <Nav className="mr">
               <Link class="nav-link text-end" to="/login">

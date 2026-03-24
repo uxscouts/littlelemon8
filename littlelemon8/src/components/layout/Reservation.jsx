@@ -1,6 +1,11 @@
+import BookingForm from "./BookingForm";
+
 const Reservation = () => {
     return(
-        <h1>Reservation Page Component</h1>
+        <>
+            <h1>Booking Form</h1>
+            <BookingForm/>
+        </>
     )
 }
 export default Reservation;
